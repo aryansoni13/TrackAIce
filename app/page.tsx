@@ -309,21 +309,11 @@ export default function Dashboard() {
   const generateGreeting = async (userName: string, isDetected: boolean) => {
     setIsGeneratingGreeting(true)
     try {
-      const response = await fetch("/api/generate-greeting", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          userName, 
-          time: new Date().toISOString(),
-          isDetected 
-        }),
-      })
-
-      const result = await response.json()
-      setGreeting(result.greeting)
-
-      // Auto-play the greeting
-      await speakGreeting(result.greeting)
+      let greeting = isDetected
+        ? `Good day, ${userName}! Welcome back!`
+        : "Please position yourself in front of the camera for detection."
+      setGreeting(greeting)
+      await speakGreeting(greeting)
     } catch (error: any) {
       console.error("Greeting generation error:", error)
     } finally {
