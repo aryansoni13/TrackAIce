@@ -1,4 +1,4 @@
-# AI Timekeeper - Facial Recognition Attendance System
+#TrackAIce - Facial Recognition Attendance System
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/akashi-projects/v0-face-recognition-timekeeper)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
@@ -9,7 +9,6 @@
 
 AI Timekeeper is an advanced facial recognition attendance system that uses the Luxand API to automatically detect, recognize, and record attendance. The application provides real-time feedback, attendance tracking, and a modern user interface for managing check-ins and check-outs.
 
-![AI Timekeeper Screenshot](./public/app.png)
 
 ## ✨ Features
 
